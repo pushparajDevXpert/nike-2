@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+background-color: #f5f5f5;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+padding: 20px;
+}
+.login_container{
+background-color: #fff;
+padding: 40px 30px;
+border-radius: 50px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+width: 100%;
+max-width: 400px;
+
+} 
+.imge {
+text-align: center;
+margin-bottom: 20px;
+}
+.imge img {
+width: 80px;
+}
+h1{
+text-align: center;
+margin-bottom: 30px;
+    font-size: 22px;
+    color:black;
+}
+.email{
+    margin-bottom: 2px;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: gray;    
+}
+.input-field input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+   transition: background-color 0.3 ease;
+}
+button:hover{
+    background-color: #333;
+}
+.singin{
+    margin-top: 23px;
+    text-align: center;
+}
+.singinbnt{
+    background-color:gold;
+    padding: 12px;
+    color: white;
+
+}
+.singinbnt:hover{
+    color: aqua;
+    background-color: red;
+}
+input[type=email]:focus {
+
+    background-color: transparent;
+    border: none;
+    border-radius: 18px;
+    color: black;
+}
+  input[type=password]:focus {
+    border-radius: 18px;
+    border: none;
+    background-color: transparent;
+    color: black;
+}

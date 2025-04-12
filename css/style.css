@@ -25,7 +25,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            height: 70px;
+            height: 100px;
         }
         
         header nav li {
@@ -43,15 +43,21 @@
         }
         
         nav a:hover {
-            color:red;
+            color:gold;
         }
         
-        .image {
+        .image{
             position: absolute;
             left: 30px;
             cursor: pointer;
-            height: 40px;
+            height: 50px;
             width: auto;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+        }
+         h1:hover{
+            color: gold;
         }
         
         .menu-button {
@@ -171,15 +177,15 @@
         }
         
         .indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
+            width: 50px;
+            height: 5px;
+            border-radius: 10%;
             background-color: rgba(255,255,255,0.5);
             cursor: pointer;
         }
         
         .indicator.active {
-            background-color: white;
+            background-color: gold;
         }
         
         /* Mobile styles */
@@ -247,7 +253,7 @@
         
         .products{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
             gap: 30px;
         }
         

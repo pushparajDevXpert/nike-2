@@ -38,7 +38,10 @@ function goToSlide(index) {
     currentSlide = index;
     updateCarousel();
 }
-
+function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
 // Auto-rotate carousel
 setInterval(nextSlide, 5000);
 // Your existing JavaScript code

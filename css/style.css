@@ -30,6 +30,7 @@
         
         header nav li {
             height: 50px;
+
         }
         
         header nav a { 
@@ -50,7 +51,7 @@
             position: absolute;
             left: 30px;
             cursor: pointer;
-            height: 50px;
+            height: auto;
             width: auto;
             font-size: 20px;
             font-style: italic;
@@ -97,6 +98,10 @@
             position: relative;
             right: 400px;
 
+        }
+        #Lists{
+            position: absolute;
+            right: 50px;
         }
         /* Carousel */
         .carousel-container {

@@ -29,8 +29,9 @@
         }
         
         header nav li {
+           align-content: center;
             height: 50px;
-
+        
         }
         
         header nav a { 
@@ -99,10 +100,7 @@
             right: 400px;
 
         }
-        #Lists{
-            position: absolute;
-            right: 50px;
-        }
+        
         /* Carousel */
         .carousel-container {
             position: relative;
@@ -245,26 +243,30 @@
         }
         .products-section {
             max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 20px;
+            display: inline;
+            
+
         }
         
         .section-title {
             text-align: center;
+            margin-top: 40px;
             margin-bottom: 40px;
             font-size: 2rem;
             color: #111;
         }
         
         .products{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+            display: flex;
+            flex-direction: row;
             gap: 30px;
+            /* border-radius: 200px; */
         }
         
         .product-card {
+            
             background: white;
-            border-radius: 8px;
+            border-radius: 100px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -337,9 +339,11 @@
         
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            .products-grid {
-                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-                gap: 20px;
+            .products {
+                display: flex;
+              flex-direction: column;
+            gap: 30px;
+            border-radius: 200px;
             }
             
             .product-image {

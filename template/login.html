@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
+    <header>
+        <nav>    
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li class="lists" id="Lists"><a href="index.html">Home</a></li>
+                <li class="lists"id="Lists"><a href="#">About</a></li>
+                <li class="lists"id="Lists"><a href="#">Products</a></li>
+                <li class="lists"id="Lists"><a href="#">Shop </a></li> 
+                <li class="lists"id="Lists"><a href="#">Blog </a></li>
+                <li class="lists"id="Lists"><a href="#">Contact</a></li>  
+                <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li><!--why it is not opening on another page-->
+            </ul> 
+            <ul class="main-nav" >
+                <li><a href="#" id="logo"><h1 class="image">AllBrand Soles</h1></a></li>
+                <li class="hideOnMobile" id="content"><a href="index.html">Home </a></li>
+                <li class="hideOnMobile"id="content"><a href="#">About</a></li>
+                <li class="hideOnMobile"id="content"><a href="#">Products</a></li>
+                <li class="hideOnMobile"id="content"><a href="#">Blog </a></li>
+                <li class="hideOnMobile"id="content"><a href="#"> Contact</a></li>
+                <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+            </ul>    
+        </nav>
+    </header>
     <div class="login_container"  >
         <div class="imge">
             <img src="/image/logo/logo.png" alt="" srcset="">
@@ -37,5 +69,56 @@
         </div>
         <a href="/template/singin.html" ><button type="submit" class="singinbnt">Sing In</button></a>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column footer-logo">
+                <!-- <img src="/image/logo/logo2.jpg" alt="Nike Logo"> -->
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="/js/SINGING.JS"></script>
 </body>
 </html>

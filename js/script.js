@@ -63,3 +63,16 @@ setInterval(nextSlide, 5000);
                 icon.style.color = icon.classList.contains('fas') ? '#ff0000' : '#ccc';
             });
         });
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          });
+      
+          observer.observe(document.getElementById('img-sec'));
+          function showData() {
+            const dataBox = document.getElementById('dataBox');
+            dataBox.style.display = 'flex';
+          }

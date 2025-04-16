@@ -1,142 +1,214 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RoyalTech</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>    
-                <ul class="sidebar">
-                    <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
-                    <li class="lists" id="Lists"><a href="#">Home</a></li>
-                    <li class="lists"id="Lists"><a href="#">About</a></li>
-                    <li class="lists"id="Lists"><a href="#">Products</a></li>
-                    <li class="lists"id="Lists"><a href="#">Shop </a></li> 
-                    <li class="lists"id="Lists"><a href="#">Blog </a></li>
-                    <li class="lists"id="Lists"><a href="#">Contact</a></li>  
-                    <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                    <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                    <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                    <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li><!--why it is not opening on another page-->
-                </ul> 
-                <ul class="main-nav" >
-                    <li><a href="#" id="logo"><h1 class="image">RoyalTech</h1></a></li>
-                    <li class="hideOnMobile" id="content"><a href="#">Home </a></li>
-                    <li class="hideOnMobile"id="content"><a href="#">About</a></li>
-                    <li class="hideOnMobile"id="content"><a href="#">Products</a></li>
-                    <li class="hideOnMobile"id="content"><a href="#">Blog </a></li>
-                    <li class="hideOnMobile"id="content"><a href="#"> Contact</a></li>
-                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                    <li class="hideOnMobile"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
-                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
-                </ul>    
-            </nav>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Carousel Section -->
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="carousel-slide">
-                    <img src="/image/banner/banner1.jpg!w700wp" alt="Nike Air Max" class="image1">
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/banner/banner2.jpg" alt="Nike Dri-FIT" class="image1">
-                
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/banner/banner3.jpg" alt="Nike Running" class="image1">
-                    
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/banner/banner4.avif" alt="Nike Running" class="image1">
-                    
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li class="lists" id="Lists"><a href="#">Home</a></li>
+                <li class="lists" id="Lists"><a href="#">About</a></li>
+                <li class="lists" id="Lists"><a href="#">Products</a></li>
+                <li class="lists" id="Lists"><a href="#">Shop </a></li>
+                <li class="lists" id="Lists"><a href="#">Blog </a></li>
+                <li class="lists" id="Lists"><a href="#">Contact</a></li>
+                <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
+                </li><!--why it is not opening on another page-->
+            </ul>
+            <ul class="main-nav">
+                <li><a href="#" id="logo">
+                        <h1 class="image" id="logo">RoyalTech</h1>
+                    </a></li>
+                <li class="hideOnMobile" id="content"><a href="#">Home </a></li>
+                <li class="hideOnMobile" id="content"><a href="#">About</a></li>
+                <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                <li class="hideOnMobile" id="content"><a href="#">Blog </a></li>
+                <li class="hideOnMobile" id="content"><a href="#"> Contact</a></li>
+                <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="hideOnMobile"><a href="/template/login.html"><i
+                            class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="/image/banner/banner1.jpg!w700wp" alt="Nike Air Max" class="image1">
             </div>
-            
-            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-            
-            <div class="carousel-indicators">
-                <span class="indicator active" onclick="goToSlide(0)"></span>
-                <span class="indicator" onclick="goToSlide(1)"></span>
-                <span class="indicator" onclick="goToSlide(2)"></span>
-                <span class="indicator" onclick="goToSlide(3)"></span>
+            <div class="carousel-slide">
+                <img src="/image/banner/banner2.jpg" alt="Nike Dri-FIT" class="image1">
+
+            </div>
+            <div class="carousel-slide">
+                <img src="/image/banner/banner3.jpg" alt="Nike Running" class="image1">
+
+            </div>
+            <div class="carousel-slide">
+                <img src="/image/banner/banner4.avif" alt="Nike Running" class="image1">
+
             </div>
         </div>
+
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+            <span class="indicator" onclick="goToSlide(3)"></span>
+        </div>
+    </div>
+    <h1 id="shop-collection">Shop by Collection</h1>
+    <div class="container-1">
+      <div class="card">
+          <a href="#">
+              <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+            </a>
         
-        <div class="container">
-            <div class="product-row">
-                <div class="img-sec">
-                    <img src="/image/products/0k09tgr01o421.webp" alt="" srcset="">
+      </div>
+  
+      <div class="card">
+        <a href="#"> <img src="/image/index_page/shop_collection/For_Women.webp" alt="Women Collection"/></a>
 
+      </div>
+  
+      <div class="card">
+        <a href="#"><img src="/image/index_page/shop_collection/Limited_Stock_Banner.webp" alt="Limited Stock"/></a>
+      </div>
+  
+      <div class="card">
+        <a href="#"><img src="/image/index_page/shop_collection/trending.webp" alt="Trending"/></a>
+      </div>
+    </div>
+   <a href="#"> <button class="product-btn">
+        VIEW ALL PRODUCTS <span class="arrow">→</span>
+    </button></a>
+    
+    <h1 class="new-lanches">New Lanches</h1>
+    <div class="container-2">
+            <div class="card ">
+                <a href="#">
+                    <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                  </a>
                 </div>
-                <div class="detail-sec">
-                    <h1>White Shoes</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius unde vero totam? Possimus assumenda exercitationem expedita rem unde adipisci!</p>
-                    <p>price: 5400</p>
-                </div>
-            </div>
-        </div>
-
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-column footer-logo">
-                    <img src="/image/logo/logo2.jpg" alt="Nike Logo">
-                    <p>Bring inspiration and innovation to every athlete in the world.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="card " id="new">
+                    <a href="#">
+                        <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                      </a>
                     </div>
+                    <div class="card " id="new">
+                        <a href="#">
+                            <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                          </a>
+                        </div>
+                        <div class="card " id="new">
+                            <a href="#">
+                                <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                              </a>
+                            </div>
+        </div>
+        <a href="#"> <button class="product-btn">
+            VIEW ALL PRODUCTS <span class="arrow">→</span>
+        </button></a>
+        <h1 id="shop-collection">Explore Our Categories</h1>
+        <div class="container-3">
+            <div class="card new">
+                <a href="#">
+                    <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                  </a>
                 </div>
+                <div class="card new ">
+                    <a href="#">
+                        <img class="sports" src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                      </a>
+                    </div>
+                    <div class="card new">
+                        <a href="#">
+                            <img  class="sports"src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                          </a>
+                        </div>
+                        <div class="card new " >
+                            <a href="#">
+                                <img  class="sports"src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                              </a>
+                            </div>
+        </div>
+        <a href="#"> <button class="product-btn">
+            VIEW ALL PRODUCTS <span class="arrow">→</span>
+        </button></a>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column footer-logo">
                 
-                <div class="footer-column">
-                    <h3>Shop</h3>
-                    <ul>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">New Releases</a></li>
-                        <li><a href="#">Sale</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Help</h3>
-                    <ul>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Shipping & Delivery</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">About Nike</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                    </ul>
+                <h3>Contact With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
             </div>
-        </footer>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
     <script src="/js/script.js"></script>
-        
-    </body>
-    </html>
+
+</body>
+
+</html>

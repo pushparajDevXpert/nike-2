@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/about.css">
 </head>
-
 <body>
     <header>
         <nav>
             <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li onclick="hideSidebar()"><a href="/template/index.html"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
                 <li class="lists" id="Lists"><a href="/template/index.html">Home</a></li>
                 <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
                 <li class="lists" id="Lists"><a href="#">Products</a></li>
@@ -62,79 +60,68 @@
 
         </nav>
     </header>
-    <section class="hero" >
-        <div class="hero-content">
-            <h1>About AllBrand Soles</h1>
-            <p class="subtitle">
-                The Foundation Of Every Great Step
-            </p>
-        </div>
-    </section>
-    <main class="mission">
-        <div class="container">
-            <div class="mission-box">
-                <p>At <strong>AllBrand Soles</strong>, we believe the secret to exceptional footwear lies in what's
-                    <em>underneath</em>—the sole. Since 2010, we've dedicated ourselves to engineering high-performance
-                    soles that combine unbeatable comfort, durability, and style. Whether you're a shoe manufacturer,
-                    retailer, or a sole-searching individual, we're here to elevate every step you take.
-                </p>
+    <main>
+        <section class="contact-hero">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? We'd love to hear from you. Reach out to our team and we'll get back to you as soon as possible.</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Address</h4>
+                        <p>123 Shoe Street, Footwear District<br>New York, NY 10001, USA</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567<br>Mon-Fri: 9am-6pm EST</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <p>info@allbrandsoles.com<br>support@allbrandsoles.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">
-                Why AllBrand Soles?
-            </h2>
-            <div class="feature-grid">
-                <div class="feature-card" style="display: flexbox; flex-direction: row-reverse;">
-                    <h3>Innovation Meets Tradition</h3>
-                    <p>We blend cutting-edge materials with time-tested techniques for soles that excel in grip,
-                        cushioning, and resilience.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Custom Solutions</h3>
-                    <p>Need a sole tailored to your brand? Our team collaborates with designers and manufacturers to
-                        create
-                        proprietary designs.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Eco-Conscious Craftsmanship</h3>
-                    <p>We prioritize sustainable materials like recycled rubber and biodegradable compounds without
-                        compromising quality.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Global Reach, Local Touch</h3>
-                    <p>Serving shoe brands and cobblers worldwide, with a commitment to fair pricing and personalized
-                        service.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="story">
-        <div class="container">
-            <h2 class="section-title">Our Story</h2>
-            <div class="story-content">
-                <div class="story-text">
-                    <p>What began as a small workshop focused on repairing worn-out soles grew into a passion for <em>preventing</em> wear-and-tear altogether. Our founder, a third-generation cobbler, saw the need for better quality soles that could extend the life of quality footwear.</p>
-                    <p>Today, AllBrand Soles partners with leading footwear brands and independent artisans to deliver soles that outperform industry standards. Our state-of-the-art facility combines traditional craftsmanship with modern technology to produce over 2 million soles annually.</p>
-                    <p>Every AllBrand sole is rigorously tested for slip resistance, flexibility, and shock absorption—because we know the right foundation can transform a shoe from ordinary to extraordinary.</p>
-                </div>
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Shoe soles production">
-                </div>
-            </div>
-        </div>
-    </section>
-       
-    <section class="cta">
-        <div class="container">
-            <h2>Walk With Confidence</h2>
-            <p>Join the movement: <strong>Step better. Step longer. Step forward.</strong></p>
-            <a href="/template/conatct.html" class="btn">Contact Our Team</a>
-        </div>
-    </section>
     <footer>
         <div class="footer-container">
             <div class="footer-column footer-logo">
@@ -185,5 +172,4 @@
         </div>
     </footer>
 </body>
-
 </html>

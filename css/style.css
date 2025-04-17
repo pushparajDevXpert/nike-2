@@ -204,6 +204,9 @@
         #add:hover {
             background-color: #ff6b6b;
         }
+        a{
+            text-decoration: none;
+        }
 
         .product-btn {
             display: block;

@@ -10,33 +10,45 @@
 </head>
 <body>
     <header>
-        <nav>    
+        <nav>
             <ul class="sidebar">
                 <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
-                <li class="lists" id="Lists"><a href="index.html">Home</a></li>
-                <li class="lists"id="Lists"><a href="#">About</a></li>
-                <li class="lists"id="Lists"><a href="#">Products</a></li>
-                <li class="lists"id="Lists"><a href="#">Shop </a></li> 
-                <li class="lists"id="Lists"><a href="#">Blog </a></li>
-                <li class="lists"id="Lists"><a href="#">Contact</a></li>  
+                <li class="lists" id="Lists"><a href="#">Home</a></li>
+                <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
+                <li class="lists" id="Lists"><a href="#">Products</a></li>
+                <li class="lists" id="Lists"><a href="#">Shop </a></li>
+                <li class="lists" id="Lists"><a href="#">Blog </a></li>
+                <li class="lists" id="Lists"><a href="#">Contact</a></li>
                 <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li><!--why it is not opening on another page-->
-            </ul> 
-            <ul class="main-nav" >
-                <li><a href="#" id="logo"><h1 class="image">AllBrand Soles</h1></a></li>
-                <li class="hideOnMobile" id="content"><a href="index.html">Home </a></li>
-                <li class="hideOnMobile"id="content"><a href="#">About</a></li>
-                <li class="hideOnMobile"id="content"><a href="#">Products</a></li>
-                <li class="hideOnMobile"id="content"><a href="#">Blog </a></li>
-                <li class="hideOnMobile"id="content"><a href="#"> Contact</a></li>
-                <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
-                <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
-            </ul>    
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+            </ul>
+            <ul class="main-nav">
+                <!-- Logo on the left -->
+                <li><a href="/template/index.html" id="logo">
+                    <h1 class="image">AllBrand Soles</h1>
+                </a></li>
+
+                <!-- Centered navigation links -->
+                <div class="nav-center">
+                    <li class="hideOnMobile" id="content"><a href="#">Home</a></li>
+                    <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Contact</a></li>
+                </div>
+
+                <!-- Icons and menu button on the right -->
+                <div class="nav-right">
+                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+                </div>
+            </ul>
+  
         </nav>
     </header>
     <div class="singup_container">
@@ -85,8 +97,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column footer-logo">
-                <!-- <img src="/image/logo/logo2.jpg" alt="Nike Logo"> -->
-                <h3>Connect With Us</h3>
+                <h3>Contact With Us</h3>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -94,7 +105,7 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Shop</h3>
                 <ul>
@@ -105,7 +116,7 @@
                     <li><a href="#">Sale</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Help</h3>
                 <ul>
@@ -116,22 +127,46 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Investors</a></li>
                     <li><a href="#">Sustainability</a></li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>&copy; 2024 AllBrand Soles. All rights reserved.</p>
+            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
+    <script>
+        // Mobile Navigation
+        function showSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '0';
+       }
+
+       function hideSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '-300px';
+       }
+
+       // Initialize first slide
+       showSlide(0);
+       // Mobile Navigation
+       function showSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '0';
+       }
+
+       function hideSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '-300px';
+       }
+    </script>
 </body>
 </html>

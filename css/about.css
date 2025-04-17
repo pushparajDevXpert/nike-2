@@ -11,8 +11,6 @@ body {
     overflow-x: hidden;
    
 }
-
-/* Navigation */
 header nav {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     background-color: white;
@@ -77,7 +75,7 @@ nav a:hover {
     width: 250px;
     background-color: white;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -99,7 +97,215 @@ nav a:hover {
 
 #content{
     position: relative;
+    
     right: 400px;
 
 }
+@media (max-width:320px) {
+    .hideOnMobile {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+    
+    .sidebar {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+    }
+    
+    .sidebar {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    .slide-content {
+        left: 20px;
+        bottom: 20px;
+        max-width: 80%;
+        padding: 15px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+}
 
+@media (max-width: 500px) {
+   
+    
+    .slide-content {
+        left: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .slide-content button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 0 30px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.footer-newsletter {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button {
+    background-color: #fff;
+    color: #111;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #ddd;
+}
+/* respossive media for footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-newsletter {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .newsletter-form button {
+        margin-top: 10px;
+        padding: 12px;
+    }
+}

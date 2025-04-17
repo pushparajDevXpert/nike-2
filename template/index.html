@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoyalTech</title>
+    <title>AllBrand Soles</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -27,26 +27,33 @@
                 <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
-                </li><!--why it is not opening on another page-->
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
             </ul>
             <ul class="main-nav">
+                <!-- Logo on the left -->
                 <li><a href="#" id="logo">
-                        <h1 class="image" id="logo">RoyalTech</h1>
-                    </a></li>
-                <li class="hideOnMobile" id="content"><a href="#">Home </a></li>
-                <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
-                <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
-                <li class="hideOnMobile" id="content"><a href="#">Blog </a></li>
-                <li class="hideOnMobile" id="content"><a href="#"> Contact</a></li>
-                <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                <li class="hideOnMobile"><a href="/template/login.html"><i
-                            class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
-                <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
-                </li>
+                    <h1 class="image">AllBrand Soles</h1>
+                </a></li>
+
+                <!-- Centered navigation links -->
+                <div class="nav-center">
+                    <li class="hideOnMobile" id="content"><a href="#">Home</a></li>
+                    <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Contact</a></li>
+                </div>
+
+                <!-- Icons and menu button on the right -->
+                <div class="nav-right">
+                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+                </div>
             </ul>
+  
         </nav>
     </header>
 
@@ -54,19 +61,16 @@
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-slide">
-                <img src="/image/banner/banner1.jpg!w700wp" alt="Nike Air Max" class="image1">
+                <img src="https://via.placeholder.com/1200x500?text=Nike+Air+Max" alt="Nike Air Max" class="image1">
             </div>
             <div class="carousel-slide">
-                <img src="/image/banner/banner2.jpg" alt="Nike Dri-FIT" class="image1">
-
+                <img src="https://via.placeholder.com/1200x500?text=Nike+Dri-FIT" alt="Nike Dri-FIT" class="image1">
             </div>
             <div class="carousel-slide">
-                <img src="/image/banner/banner3.jpg" alt="Nike Running" class="image1">
-
+                <img src="https://via.placeholder.com/1200x500?text=Nike+Running" alt="Nike Running" class="image1">
             </div>
             <div class="carousel-slide">
-                <img src="/image/banner/banner4.avif" alt="Nike Running" class="image1">
-
+                <img src="https://via.placeholder.com/1200x500?text=Nike+Training" alt="Nike Training" class="image1">
             </div>
         </div>
 
@@ -80,114 +84,105 @@
             <span class="indicator" onclick="goToSlide(3)"></span>
         </div>
     </div>
+    
     <h1 id="shop-collection">Shop by Collection</h1>
     <div class="container-1">
-      <div class="card">
-          <a href="#">
-              <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+        <div class="card">
+            <a href="#">
+                <img src="https://via.placeholder.com/300x300?text=Men+Collection" alt="Men Collection"/>
             </a>
-        
-      </div>
-  
-      <div class="card">
-        <a href="#"> <img src="/image/index_page/shop_collection/For_Women.webp" alt="Women Collection"/></a>
-
-      </div>
-  
-      <div class="card">
-        <a href="#"><img src="/image/index_page/shop_collection/Limited_Stock_Banner.webp" alt="Limited Stock"/></a>
-      </div>
-  
-      <div class="card">
-        <a href="#"><img src="/image/index_page/shop_collection/trending.webp" alt="Trending"/></a>
-      </div>
+        </div>
+        <div class="card">
+            <a href="#"> <img src="https://via.placeholder.com/300x300?text=Women+Collection" alt="Women Collection"/></a>
+        </div>
+        <div class="card">
+            <a href="#"><img src="https://via.placeholder.com/300x300?text=Limited+Stock" alt="Limited Stock"/></a>
+        </div>
+        <div class="card">
+            <a href="#"><img src="https://via.placeholder.com/300x300?text=Trending" alt="Trending"/></a>
+        </div>
     </div>
-   <a href="#"> <button class="product-btn">
+    
+    <a href="#"> <button class="product-btn">
         VIEW ALL PRODUCTS <span class="arrow">→</span>
     </button></a>
     
-    <h1 class="new-lanches">New Lanches</h1>
+    <h1 class="new-lanches">New Launches</h1>
     <div class="container-2">
-            <div class="card "id="new">
-                <a href="#">
-                    <img src="/image/products/RNBL-Beige.webp" alt="Men Collection"  >
-                  </a>
-                  <div class="details-sec"><b>ReLive Knit Boat Loafters:Beige</b>
-                <p class="amount" ><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
-                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
-                
-                </div>
-                 
-                  
-                </div>
-                <div class="card " id="new">
-                    <a href="#">
-                        <img src="/image/products/freepik__background__41152-removebg-preview.png" alt="Men Collection"/>
-                      </a>
-                      <div class="details-sec"><b>ReLive Knit Boat Loafters:Beige</b>
-                        <p class="amount" ><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
-                        <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
-                        
-                        </div>
-                    </div>
-                    <div class="card " id="new">
-                        <a href="#">
-                            <img src="/image/products/Beige.webp" alt="Men Collection"/>
-                          </a>
-                          <div class="details-sec"><b>ReLive Knit Boat Loafters:Beige</b>
-                            <p class="amount" ><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
-                            <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
-                            
-                            </div>
-                        </div>
-                        <div class="card " id="new">
-                            <a href="#">
-                                <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-                              </a>
-                              <div class="details-sec"><b>ReLive Knit Boat Loafters:Beige</b>
-                                <p class="amount" ><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
-                                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
-                                
-                                </div>
-                            </div>
-        </div>
-        <a href="#"> <button class="product-btn">
-            VIEW ALL PRODUCTS <span class="arrow">→</span>
-        </button></a>
-        <h1 id="shop-collection">Explore Our Categories</h1>
-        <div class="container-3">
+        <div class="card" id="new">
             <a href="#">
-                <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
+                <img src="https://via.placeholder.com/300x300?text=Beige+Shoes" alt="Beige Shoes">
             </a>
-            <a href="#">
-                <img class="sports" src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-              </a>
-              <a href="#">
-                  <img  class="sports"src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-                </a>
-               
+            <div class="details-sec"><b>ReLive Knit Boat Loafters:Beige</b>
+                <p class="amount"><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
+                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
             </div>
-            <div class="container-4">
-                <a href="#">
-                    <img src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-                </a>
-                <a href="#">
-                    <img class="sports" src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-                  </a>
-                  <a href="#">
-                      <img  class="sports"src="/image/index_page/shop_collection/For_Men.webp" alt="Men Collection"/>
-                    </a>
-                    
-                </div>
-        <a href="#"> <button class="product-btn">
-            VIEW ALL PRODUCTS <span class="arrow">→</span>
-        </button></a>
-
+        </div>
+        <div class="card" id="new">
+            <a href="#">
+                <img src="https://via.placeholder.com/300x300?text=Blue+Shoes" alt="Blue Shoes"/>
+            </a>
+            <div class="details-sec"><b>ReLive Knit Boat Loafters:Blue</b>
+                <p class="amount"><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
+                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
+            </div>
+        </div>
+        <div class="card" id="new">
+            <a href="#">
+                <img src="https://via.placeholder.com/300x300?text=Black+Shoes" alt="Black Shoes"/>
+            </a>
+            <div class="details-sec"><b>ReLive Knit Boat Loafters:Black</b>
+                <p class="amount"><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
+                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
+            </div>
+        </div>
+        <div class="card" id="new">
+            <a href="#">
+                <img src="https://via.placeholder.com/300x300?text=Red+Shoes" alt="Red Shoes"/>
+            </a>
+            <div class="details-sec"><b>ReLive Knit Boat Loafters:Red</b>
+                <p class="amount"><b>Rs:2,299/-</b> <strike>&nbsp;Rs:2,999</strike> 23% OFF</p>
+                <a href=""><button type="submit" id="add"><i class="fa-solid fa-cart-arrow-down"></i> ADD TO CART</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#"> <button class="product-btn">
+        VIEW ALL PRODUCTS <span class="arrow">→</span>
+    </button></a>
+    
+    <h1 id="shop-collection">Explore Our Categories</h1>
+    <div class="container-3">
+        <a href="#">
+            <img src="https://via.placeholder.com/300x200?text=Sports" alt="Sports"/>
+        </a>
+        <a href="#">
+            <img class="sports" src="https://via.placeholder.com/300x200?text=Casual" alt="Casual"/>
+        </a>
+        <a href="#">
+            <img class="sports" src="https://via.placeholder.com/300x200?text=Formal" alt="Formal"/>
+        </a>
+    </div>
+    
+    <div class="container-4">
+        <a href="#">
+            <img src="https://via.placeholder.com/300x200?text=Running" alt="Running"/>
+        </a>
+        <a href="#">
+            <img class="sports" src="https://via.placeholder.com/300x200?text=Training" alt="Training"/>
+        </a>
+        <a href="#">
+            <img class="sports" src="https://via.placeholder.com/300x200?text=Accessories" alt="Accessories"/>
+        </a>
+    </div>
+    
+    <a href="#"> <button class="product-btn">
+        VIEW ALL PRODUCTS <span class="arrow">→</span>
+    </button></a>
 
     <footer>
         <div class="footer-container">
             <div class="footer-column footer-logo">
-                
                 <h3>Contact With Us</h3>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -222,7 +217,7 @@
             <div class="footer-column">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Investors</a></li>
                     <li><a href="#">Sustainability</a></li>
@@ -231,11 +226,59 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
 
+    <script>
+        // Carousel Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) currentSlide = 0;
+            else if (index < 0) currentSlide = totalSlides - 1;
+            else currentSlide = index;
+            
+            const offset = -currentSlide * 100;
+            document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+            
+            // Update indicators
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 5000);
+
+        // Mobile Navigation
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+        }
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
 </body>
-
 </html>

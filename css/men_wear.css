@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,6 @@ nav ul li a:hover {
 .menu-button, .sidebar li:first-child {
     display: none;
 }
-
 /* Sidebar */
 .sidebar {
     position: fixed;
@@ -74,7 +72,6 @@ nav ul li a:hover {
 .sidebar li {
     margin: 15px 0;
 }
-
 .main-nav {
     display: flex;
     align-items: center;
@@ -96,139 +93,15 @@ nav ul li a:hover {
     display: flex;
     margin-left: auto; /* Pushes icons to the right */
 }
- /* Contact Page Specific Styles */
- .contact-hero {
-    background-color: #f8f9fa;
-    padding: 60px 20px;
-    text-align: center;
-}
 
-.contact-hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'Merriweather', serif;
-}
 
-.contact-hero p {
-    font-size: 1.1rem;
-    color: #666;
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    gap: 30px;
-}
-
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.contact-form h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #555;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #333;
-    outline: none;
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #555;
-}
-
-.contact-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
-}
-
-.info-icon {
-    font-size: 1.5rem;
-    color: #333;
-    margin-right: 15px;
-    margin-top: 5px;
-}
-
-.info-content h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.info-content p {
-    color: #666;
-    line-height: 1.6;
-}
 footer {
     background-color: #333;
     color: white;
     padding: 20px 0 0;
+    margin-top: auto;
 }
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -288,6 +161,7 @@ footer {
  #youtube:hover{
     color: red;
  }
+
 .footer-bottom {
     text-align: center;
     padding: 20px;
@@ -296,12 +170,20 @@ footer {
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  
+}
+
 @media (max-width: 992px) {
+    .carousel-slide img {
+        height: 400px;
+    }
     
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .hideOnMobile {
         display: none;
@@ -310,23 +192,29 @@ footer {
     .menu-button {
         display: block;
     }
-    .contact-container {
-        flex-direction: column;
+    
+    .container-1, .container-2, .container-3, .container-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .contact-form,
-            .contact-info {
-                width: 100%;
-            }
-            
-            .contact-hero h2 {
-                font-size: 2rem;
-            }
-            
-            .contact-hero p {
-                font-size: 1rem;
-            }
+    
+    .carousel-slide img {
+        height: 300px;
+    }
+    
+    h1#shop-collection, h1.new-lanches {
+        font-size: 1.5rem;
+    }
+}
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
+    .container-1, .container-2, .container-3, .container-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .carousel-slide img {
+        height: 250px;
+    }
+    
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -340,4 +228,4 @@ footer {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
-}}
+}

@@ -270,7 +270,7 @@
         }
 
         .footer-column ul li a:hover {
-            color: white;
+            color: #ff6b6b;
         }
 
         .social-icons {
@@ -285,9 +285,21 @@
             transition: color 0.3s;
         }
 
-        .social-icons a:hover {
+        /* .social-icons a:hover {
             color: #ff6b6b;
-        }
+        } */
+         #facbook:hover{
+            color: blue;
+         }
+         #twitter:hover{
+            color: lightskyblue;
+         }
+         #insta:hover{
+            color: rgb(255, 0, 251);
+         }
+         #youtube:hover{
+            color: red;
+         }
 
         .footer-bottom {
             text-align: center;

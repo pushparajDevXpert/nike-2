@@ -98,8 +98,8 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px 0 0;
+    margin-top: auto;
 }
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -129,7 +129,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: white;
+    color: #ff6b6b;
 }
 
 .social-icons {
@@ -144,9 +144,21 @@ footer {
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
+/* .social-icons a:hover {
     color: #ff6b6b;
-}
+} */
+#facbook:hover{
+    color: blue;
+ }
+ #twitter:hover{
+    color: lightskyblue;
+ }
+ #insta:hover{
+    color: rgb(255, 0, 251);
+ }
+ #youtube:hover{
+    color: red;
+ }
 
 .footer-bottom {
     text-align: center;
@@ -215,16 +227,10 @@ footer {
         font-size: 0.9rem;
     }
 }
- /* Updated Navigation Styles */
+
 
 
         /* Footer Styles (same as before) */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0 0;
-            margin-top: auto;
-        }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {

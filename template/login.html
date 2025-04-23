@@ -16,12 +16,13 @@
         <nav>
             <ul class="sidebar">
                 <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
-                <li class="lists" id="Lists"><a href="#">Home</a></li>
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li class="lists" id="Lists"><a href="/template/index.html">Home</a></li>
                 <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
                 <li class="lists" id="Lists"><a href="#">Products</a></li>
                 <li class="lists" id="Lists"><a href="#">Shop </a></li>
                 <li class="lists" id="Lists"><a href="#">Blog </a></li>
-                <li class="lists" id="Lists"><a href="#">Contact</a></li>
+                <li class="lists" id="Lists"><a href="/template/conatct.html">Contact</a></li>
                 <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
                 <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
@@ -29,6 +30,7 @@
             </ul>
             <ul class="main-nav">
                 <!-- Logo on the left -->
+               
                 <li><a href="/template/index.html" id="logo">
                     <h1 class="image">AllBrand Soles</h1>
                 </a></li>
@@ -126,7 +128,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
+            <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
         </div>
     </footer>
     <!-- <script src="/js/script.js"></script> -->
@@ -140,20 +142,18 @@
         function hideSidebar() {
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.right = '-300px';
+            
         }
 
         // Initialize first slide
         showSlide(0);
-        // Mobile Navigation
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.right = '0';
-        }
-
         function hideSidebar() {
             const sidebar = document.querySelector('.sidebar');
-            sidebar.style.right = '-300px';
+            sidebar.style.display = 'none';
+            
         }
+    
+    
      </script>
 </body>
 </html>

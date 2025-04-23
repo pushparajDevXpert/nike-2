@@ -1,0 +1,204 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+.product-detail {
+            display: flex;
+            padding: 40px;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-images {
+            display: flex;
+            gap: 20px;
+            width: 50%;
+        }
+        
+        .thumbnail-carousel {
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+        
+        .thumbnail-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            max-height: 500px;
+            scrollbar-width: none;
+        }
+        
+        .thumbnail-list::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        
+        .thumbnail:hover {
+            border-color: #333;
+        }
+        
+        .thumbnail.active {
+            border: 2px solid #333;
+        }
+        
+        .carousel-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .carousel-nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .main-image-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .main-image {
+            max-width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            width: 50%;
+        }
+        
+        .product-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-family: 'Merriweather', serif;
+        }
+        
+        .product-price {
+            font-size: 24px;
+            /* font-weight: bold; */
+            margin-bottom: 20px;
+            color: gray;
+        }
+        strike{
+            color: gray;
+        }
+        strong{
+            color: green;
+        }
+        
+        .product-description {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .add-to-cart, .buy-now {
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .add-to-cart {
+            background-color: #333;
+            color: white;
+        }
+        .add-to-cart:hover{
+            background-color:  #ff6b6b;
+        }
+        
+        .buy-now {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .buy-now:hover{
+            background-color:  #ff6b6b;
+        }
+        @media (max-width: 1024px) {
+            .product-detail {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .product-images {
+                flex-direction: column-reverse;
+            }
+
+            .thumbnail-carousel {
+                flex-direction: row;
+                order: 2;
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+
+            .thumbnail-list {
+                flex-direction: row;
+                max-height: none;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .product-detail {
+                padding: 20px;
+            }
+
+            .product-title {
+                font-size: 1.5rem;
+            }
+
+            .product-price {
+                font-size: 1.2rem;
+            }
+
+            .product-actions {
+                flex-direction: column;
+            }
+
+            .add-to-cart, .buy-now {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-info {
+                padding: 0;
+            }
+
+            .thumbnail {
+                width: 60px;
+                height: 60px;
+            }
+        }
+

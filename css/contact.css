@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 #logo {
@@ -106,13 +106,13 @@ nav ul li a:hover {
 .contact-hero h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
     font-family: 'Merriweather', serif;
 }
 
 .contact-hero p {
     font-size: 1.1rem;
-    color: #666;
+    color: white;
     max-width: 700px;
     margin: 0 auto 30px;
 }
@@ -135,7 +135,17 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
-
+.contact-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('/image/contact/leather-boots-shoes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
 .contact-form h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -186,7 +196,7 @@ nav ul li a:hover {
 }
 
 .submit-btn:hover {
-    background-color: #555;
+    background-color: #ff6b6b;
 }
 
 .contact-info {
@@ -258,7 +268,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 .social-icons {

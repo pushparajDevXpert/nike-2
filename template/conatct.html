@@ -1,175 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="/template/index.html"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
-                <li class="lists" id="Lists"><a href="/template/index.html">Home</a></li>
-                <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
-                <li class="lists" id="Lists"><a href="#">Products</a></li>
-                <li class="lists" id="Lists"><a href="#">Shop </a></li>
-                <li class="lists" id="Lists"><a href="#">Blog </a></li>
-                <li class="lists" id="Lists"><a href="/template/conatct.html">Contact</a></li>
-                <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
-                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
-                </li>
-            </ul>
-            <ul class="main-nav">
-                <!-- Logo on the left -->
-                <li><a href="/template/index.html" id="logo">
-                        <h1 class="image">AllBrand Soles</h1>
-                    </a></li>
-
-                <!-- Centered navigation links -->
-                <div class="nav-center">
-                    <li class="hideOnMobile" id="content"><a href="/template/index.html">Home</a></li>
-                    <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
-                    <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
-                    <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
-                    <li class="hideOnMobile" id="content"><a href="/template/conatct.html">Contact</a></li>
-                </div>
-
-                <!-- Icons and menu button on the right -->
-                <div class="nav-right">
-                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
-                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
-                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="/css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="/template/index.html"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                    <li class="lists" id="Lists"><a href="/template/index.html">Home</a></li>
+                    <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
+                    <li class="lists" id="Lists"><a href="#">Products</a></li>
+                    <li class="lists" id="Lists"><a href="#">Shop </a></li>
+                    <li class="lists" id="Lists"><a href="#">Blog </a></li>
+                    <li class="lists" id="Lists"><a href="/template/conatct.html">Contact</a></li>
+                    <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                    <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                    <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
                     </li>
-                    <li class="hideOnMobile"><a href="/template/login.html"><i
-                                class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
-                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i
-                                class="fa-solid fa-bars fa-lg"></i></a></li>
-                </div>
-            </ul>
-
-        </nav>
-    </header>
-    <main>
-        <section class="contact-hero">
-            <h2>Contact Us</h2>
-            <p>Have questions or feedback? We'd love to hear from you. Reach out to our team and we'll get back to you as soon as possible.</p>
-        </section>
-
-        <div class="contact-container">
-            <div class="contact-form">
-                <h3>Send Us a Message</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-
-            <div class="contact-info">
-                <h3>Our Contact Information</h3>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info-content">
-                        <h4>Address</h4>
-                        <p>123 Shoe Street, Footwear District<br>New York, NY 10001, USA</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="info-content">
-                        <h4>Phone</h4>
-                        <p>+1 (555) 123-4567<br>Mon-Fri: 9am-6pm EST</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info-content">
-                        <h4>Email</h4>
-                        <p>info@allbrandsoles.com<br>support@allbrandsoles.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column footer-logo">
-                <h3>Contact With Us</h3>
-                <div class="social-icons">
-                    <a href="#" id="facbook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"  id="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#"  id="insta"><i class="fab fa-instagram"></i></a>
-                    <a href="#"  id="youtube"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">New Releases</a></li>
-                    <li><a href="#">Sale</a></li>
                 </ul>
-            </div>
+                <ul class="main-nav">
+                    <!-- Logo on the left -->
+                    <li><a href="/template/index.html" id="logo">
+                            <h1 class="image">SolePort</h1>
+                        </a></li>
 
-            <div class="footer-column">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="#">Shipping & Delivery</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <!-- Centered navigation links -->
+                    <div class="nav-center">
+                        <li class="hideOnMobile" id="content"><a href="/template/index.html">Home</a></li>
+                        <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
+                        <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                        <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
+                        <li class="hideOnMobile" id="content"><a href="/template/conatct.html">Contact</a></li>
+                    </div>
+
+                    <!-- Icons and menu button on the right -->
+                    <div class="nav-right">
+                        <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                        <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                        <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a>
+                        </li>
+                        <li class="hideOnMobile"><a href="/template/login.html"><i
+                                    class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                        <li class="menu-button" onclick="showSidebar()"><a href="#"><i
+                                    class="fa-solid fa-bars fa-lg"></i></a></li>
+                    </div>
                 </ul>
+
+            </nav>
+        </header>
+        <main>
+            <section class="contact-hero">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you. Reach out to our team and we'll get back to you as soon as possible.</p>
+            </section>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>123 Shoe Street, Footwear District<br>New York, NY 10001, USA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri: 9am-6pm EST</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@soleport.com<br>support@soleport.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column footer-logo">
+                    <h3>Contact With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" id="facbook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"  id="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#"  id="insta"><i class="fab fa-instagram"></i></a>
+                        <a href="#"  id="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/template/about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="footer-column">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
             </div>
-        </div>
+        </footer>
+        <script>
+            // Mobile Navigation
+            function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
-        </div>
-    </footer>
-</body>
-</html>
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+            
+        }
+
+        // Initialize first slide
+        showSlide(0);
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+            
+        }
+    
+    
+        </script>
+    </body>
+    </html>

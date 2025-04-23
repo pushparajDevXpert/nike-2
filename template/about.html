@@ -35,7 +35,7 @@
             <ul class="main-nav">
                 <!-- Logo on the left -->
                 <li><a href="/template/index.html" id="logo">
-                        <h1 class="image">AllBrand Soles</h1>
+                        <h1 class="image">SolePort</h1>
                     </a></li>
 
                 <!-- Centered navigation links -->
@@ -64,7 +64,7 @@
     </header>
     <section class="hero" >
         <div class="hero-content">
-            <h1>About AllBrand Soles</h1>
+            <h1>SolePort</h1>
             <p class="subtitle">
                 The Foundation Of Every Great Step
             </p>
@@ -73,7 +73,7 @@
     <main class="mission">
         <div class="container">
             <div class="mission-box">
-                <p>At <strong>AllBrand Soles</strong>, we believe the secret to exceptional footwear lies in what's
+                <p>At <strong>SolePort</strong>, we believe the secret to exceptional footwear lies in what's
                     <em>underneath</em>—the sole. Since 2010, we've dedicated ourselves to engineering high-performance
                     soles that combine unbeatable comfort, durability, and style. Whether you're a shoe manufacturer,
                     retailer, or a sole-searching individual, we're here to elevate every step you take.
@@ -84,7 +84,7 @@
     <section class="features">
         <div class="container">
             <h2 class="section-title">
-                Why AllBrand Soles?
+                Why SolePort?
             </h2>
             <div class="feature-grid">
                 <div class="feature-card" style="display: flexbox; flex-direction: row-reverse;">
@@ -118,8 +118,8 @@
             <div class="story-content">
                 <div class="story-text">
                     <p>What began as a small workshop focused on repairing worn-out soles grew into a passion for <em>preventing</em> wear-and-tear altogether. Our founder, a third-generation cobbler, saw the need for better quality soles that could extend the life of quality footwear.</p>
-                    <p>Today, AllBrand Soles partners with leading footwear brands and independent artisans to deliver soles that outperform industry standards. Our state-of-the-art facility combines traditional craftsmanship with modern technology to produce over 2 million soles annually.</p>
-                    <p>Every AllBrand sole is rigorously tested for slip resistance, flexibility, and shock absorption—because we know the right foundation can transform a shoe from ordinary to extraordinary.</p>
+                    <p>Today,SolePort partners with leading footwear brands and independent artisans to deliver soles that outperform industry standards. Our state-of-the-art facility combines traditional craftsmanship with modern technology to produce over 2 million soles annually.</p>
+                    <p>Every SolePort is rigorously tested for slip resistance, flexibility, and shock absorption—because we know the right foundation can transform a shoe from ordinary to extraordinary.</p>
                 </div>
                 <div class="story-image">
                     <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Shoe soles production">
@@ -172,7 +172,7 @@
             <div class="footer-column">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="/template/about.html">About Us</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Investors</a></li>
                     <li><a href="#">Sustainability</a></li>
@@ -181,9 +181,32 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
+            <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
         </div>
     </footer>
+    <script>
+        // Mobile Navigation
+        function showSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '0';
+       }
+
+       function hideSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.right = '-300px';
+           
+       }
+
+       // Initialize first slide
+       showSlide(0);
+       function hideSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.display = 'none';
+           
+       }
+   
+   
+    </script>
 </body>
 
 </html>

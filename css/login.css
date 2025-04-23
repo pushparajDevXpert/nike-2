@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 #logo {
@@ -129,7 +129,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 .social-icons {

@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 #logo {
@@ -123,12 +123,12 @@ a {
     transform: translateY(-3px);
 }
 .hero {
-    background-image: url('/image/about/side-view-man-jumping-outdoors_23-2149557835.avif');
+    background-image: url('/image/about/leather-shoes-wooden-background.jpg');
     background-size: cover;
     background-position: center;
-    height: 800px; /* Adjust as needed */
+     height: 400px;
     position: relative;
-    color: gray; /* Text color */
+    color: white; /* Text color */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -281,7 +281,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #ff6b6b;
+    color: red;
 }
 
 .social-icons {

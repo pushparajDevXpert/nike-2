@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/purewhoosh.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li class="lists" id="Lists"><a href="#">Home</a></li>
+                <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
+                <li class="lists" id="Lists"><a href="#">Products</a></li>
+                <li class="lists" id="Lists"><a href="#">Shop </a></li>
+                <li class="lists" id="Lists"><a href="#">Blog </a></li>
+                <li class="lists" id="Lists"><a href="#">Contact</a></li>
+                <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
+                </li>
+            </ul>
+            <ul class="main-nav">
+                <!-- Logo on the left -->
+                <li><a href="/template/index.html" id="logo">
+                        <h1 class="image">SolePort</h1>
+                    </a></li>
+
+                <!-- Centered navigation links -->
+                <div class="nav-center">
+                    <li class="hideOnMobile" id="content"><a href="#">Home</a></li>
+                    <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Contact</a></li>
+                </div>
+
+                <!-- Icons and menu button on the right -->
+                <div class="nav-right">
+                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a>
+                    </li>
+                    <li class="hideOnMobile"><a href="/template/login.html"><i
+                                class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i
+                                class="fa-solid fa-bars fa-lg"></i></a></li>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="col1">
+            <div class="product-detail">
+                <div class="product-images">
+                    <div class="thumbnail-carousel">
+                        <!-- <div class="carousel-nav">
+                            <button onclick="scrollThumbnails(-1)"><i class="fas fa-chevron-up"></i></button>
+                        </div> -->
+                        <div class="thumbnail-list" id="thumbnailList">
+                            <img src="/image/purewhooshe/img1.avif" class="thumbnail active" onclick="selectImage(this)"
+                                alt="Product 1">
+                            <img src="/image/purewhooshe/img2.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 2">
+                            <img src="/image/purewhooshe/img3.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 3">
+                            <img src="/image/purewhooshe/img4.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 4">
+                            <img src="/image/purewhooshe/img5.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 5">
+                            <img src="/image/purewhooshe/img6.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 6">
+                            <img src="/image/purewhooshe/img7.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 7">
+                            <img src="/image/purewhooshe/img8.webp" class="thumbnail" onclick="selectImage(this)"
+                                alt="Product 8">
+                        </div>
+                        <!-- <div class="carousel-nav">
+                            <button onclick="scrollThumbnails(1)"><i class="fas fa-chevron-down"></i></button>
+                        </div> -->
+                    </div>
+                    <div class="main-image-container">
+                        <img src="/image/products/flipflop1.webp" class="main-image" id="mainImage"
+                            alt="Main Product Image">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Purewhoosh Breeze : Beige</h1>
+                    <div class="product-price "> <b>Rs. 1,599</b> MRP<strike> &nbsp;Rs. 2,199</strike> <strong>27%
+                            OFF</strong></div>
+                    <div class="product-description">
+                        <p>This isn’t just another sandal. With a sleek faux leather upper, a sharp adjustable buckle,
+                            and our all-new PureWhoosh sole, the PureWoosh Breeze delivers next-level support in a
+                            minimalist frame. </p>
+                        <p>Expect a contoured footbed, ergonomic cushioning, and a slip-resistant,
+                            waterproof base that keeps up with every plan, puddle, and pause.   .</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column footer-logo">
+                <h3>Contact With Us</h3>
+                <div class="social-icons">
+                    <a href="#" id="facbook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" id="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile Navigation
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+        }
+
+        // Initialize first slide
+        showSlide(0);
+        // Mobile Navigation
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+        }
+
+        function selectImage(img) {
+            // Remove active class from all thumbnails
+            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+                thumbnail.classList.remove('active');
+            });
+
+            // Add active class to clicked thumbnail
+            img.classList.add('active');
+
+            // Update main image
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = img.src.replace('80x80', '500x500');
+            mainImage.alt = img.alt;
+        }
+
+        function scrollThumbnails(direction) {
+            const container = document.getElementById('thumbnailList');
+            const scrollAmount = 90; // Matches thumbnail height + gap
+            container.scrollBy({
+                top: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

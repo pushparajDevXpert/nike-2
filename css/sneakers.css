@@ -1,0 +1,10 @@
+.col-2{
+    width: 100%;
+}
+.product-cards_seankers{
+    display: flex;
+    gap: 20px;
+   justify-content: space-around;
+   padding: 20px;
+   /* margin-left: -400px; */
+}

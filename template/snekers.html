@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/men_wear.css">
+    <link rel="stylesheet" href="/css/sneakers.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li class="lists" id="Lists"><a href="#">Home</a></li>
+                <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
+                <li class="lists" id="Lists"><a href="#">Products</a></li>
+                <li class="lists" id="Lists"><a href="#">Shop </a></li>
+                <li class="lists" id="Lists"><a href="#">Blog </a></li>
+                <li class="lists" id="Lists"><a href="#">Contact</a></li>
+                <li class="lists"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                <li class="lists"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a></li>
+                <li class="lists"><a href="/template/login.html"><i class="fa-solid fa-user fa-bounce fa-lg"></i></a>
+                </li>
+            </ul>
+            <ul class="main-nav">
+                <!-- Logo on the left -->
+                <li><a href="/template/index.html" id="logo">
+                        <h1 class="image">SolePort</h1>
+                    </a></li>
+
+                <!-- Centered navigation links -->
+                <div class="nav-center">
+                    <li class="hideOnMobile" id="content"><a href="#">Home</a></li>
+                    <li class="hideOnMobile" id="content"><a href="/template/about.html">About</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Products</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Blog</a></li>
+                    <li class="hideOnMobile" id="content"><a href="#">Contact</a></li>
+                </div>
+
+                <!-- Icons and menu button on the right -->
+                <div class="nav-right">
+                    <li class="hideOnMobile"><a href=""><i class="fa-solid fa-truck fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping fa-shake fa-lg"></i></a>
+                    </li>
+                    <li class="hideOnMobile"><a href="/template/login.html"><i
+                                class="fa-solid fa-user fa-bounce fa-lg"></i></a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><i
+                                class="fa-solid fa-bars fa-lg"></i></a></li>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <!-- row one -->
+        <div class="row">
+            <!-- <div class="col-1">
+                    <div class="filter-container">
+                        <h2>Filters</h2>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Gender</h3>
+                            <div class="filter-options">
+                                <label><input type="checkbox" name="gender" value="men"> Men Shoes</label>
+                                <label><input type="checkbox" name="gender" value="women"> Women Shoes</label>
+                                <label><input type="checkbox" name="gender" value="women"> Girls Shoes</label>
+                                <label><input type="checkbox" name="gender" value="women"> Boys Shoes</label>
+                                <label><input type="checkbox" name="gender" value="women"> Baby Shoes</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Product Type</h3>
+                            <div class="filter-options">
+                                <label><input type="checkbox" name="type" value="shirt">Canvas</label>
+                                <label><input type="checkbox" name="type" value="pants"> Cotton</label>
+                                <label><input type="checkbox" name="type" value="shoes"> Denim</label>
+                                <label><input type="checkbox" name="type" value="accessories">Faux Fur</label>
+                                <label><input type="checkbox" name="type" value="accessories">Faux Leather</label>
+                                <label><input type="checkbox" name="type" value="accessories">Faux Suede</label>
+                                <label><input type="checkbox" name="type" value="accessories">Leather</label>
+                                <label><input type="checkbox" name="type" value="accessories">Linen</label>
+                                <label><input type="checkbox" name="type" value="accessories">Mesh</label>
+                                <label><input type="checkbox" name="type" value="accessories">Natural Rubber</label>
+                                <label><input type="checkbox" name="type" value="accessories">Neoprene</label>
+                                <label><input type="checkbox" name="type" value="accessories">Nylon</label>
+                                <label><input type="checkbox" name="type" value="accessories">Polyester</label>
+                                <label><input type="checkbox" name="type" value="accessories">Polyvinyl Chloride(PVC)</label>
+                                <label><input type="checkbox" name="type" value="accessories">Suede</label>
+                                <label><input type="checkbox" name="type" value="accessories">Wool</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Collections</h3>
+                            <div class="filter-options">
+                                <label><input type="checkbox" name="collection" value="summer">Casual</label>
+                                <label><input type="checkbox" name="collection" value="winter">Chunky</label>
+                                <label><input type="checkbox" name="collection" value="spring">Daily Use</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Extra Soft</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Formal</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Outdoor</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Retro</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Signature</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Sports</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Trendy</label>
+                                <label><input type="checkbox" name="collection" value="fall"> Walking</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Color</h3>
+                            <div class="filter-options color-options">
+                                <span class="color-box Beige" title="Beige"></span>
+                                <span class="color-box black" title="Black" id="black"></span>
+                                <span class="color-box blue" title="Blue"></span>
+                                <span class="color-box brown" title="brown"></span>
+                                <span class="color-box green" title="Green"></span>
+                                <span class="color-box grey" title="grey"></span>
+                                <span class="color-box ivory" title="ivory" id="ivory"></span>
+                                <span class="color-box multicolor" title="multicolor"></span>
+                                <span class="color-box olive" title="olive"></span>
+                                <span class="color-box orange" title="orange"></span>
+                                <span class="color-box purple" title="purple"></span>
+                                <span class="color-box red" title="Red"></span>
+                                <span class="color-box tan" title=" tan"></span>
+                                <span class="color-box teal" title="teal"></span>
+                                <span class="color-box white" title="white" id="white"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Size</h3>
+                            <div class="filter-options size-options">
+                                <span class="size-option">XS</span>
+                                <span class="size-option">S</span>
+                                <span class="size-option">M</span>
+                                <span class="size-option">L</span>
+                                <span class="size-option">XL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Price</h3>
+                            <div class="filter-options price-range">
+                                <input type="range" id="price-range" min="0" max="500" value="500" >
+                                <div class="price-values">
+                                    <span>$0</span>
+                                    <span>$500</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Discount</h3>
+                            <div class="filter-options">
+                                <label><input type="checkbox" name="discount" value="10"> 10% off or more</label>
+                                <label><input type="checkbox" name="discount" value="20"> 20% off or more</label>
+                                <label><input type="checkbox" name="discount" value="30"> 30% off or more</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3 class="filter-title">Availability</h3>
+                            <div class="filter-options">
+                                <label><input type="checkbox" name="availability" value="in-stock" checked> In Stock </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-actions">
+                            <button id="apply-filters">Apply Filters</button>
+                            <button id="reset-filters">Reset</button>
+                        </div>
+                    </div>
+                
+                 
+            </div> -->
+            <div class="col-2">
+                <div class="product-cards_seankers">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="/image/products/assets (1)/senaekar.jpeg" alt="Product 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">ASIAN Men's TARZAN-11 Casual Sneaker Shoes with Synthetic Upper
+                                Lightweight Comfortable Mid Top Sneaker Shoes for Men's & Boy's</h3>
+                            <div class="product-price">₹769/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (124)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="/image/products/assets (1)/asset 8.jpeg" alt="Product 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title"> Bacca Bucci Balancer Men's Fashion Sneakers Lace-Up Trainers
+                                Basketball Style Walking Shoes</h3>
+                            <div class="product-price">₹1,499/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (98)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="/image/products/assets (1)/asset 69.jpeg" alt="Product 3" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">ASIAN Men's TARZAN-04 Casual Sneaker Shoes with Synthetic Upper
+                                Lightweight Comfortable Mid Top Sneaker Shoes for Men's & Boy's</h3>
+                            <div class="product-price">₹690/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                (156)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="/image/products/assets (1)/asset 7.jpeg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Symbol Premium Mens Smart Casual Nubuck Leather Sneakers </h3>
+                            <div class="product-price">₹2,699/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- product card 5 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/asset 39.jpeg" alt="Product 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Power Men's Athletic & Outdoor Sandals</h3>
+                            <div class="product-price">₹557/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (124)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-cards_seankers">
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/619pzLwXVlL._SY695_.jpg" alt="Product 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Leather Sneakers</h3>
+                            <div class="product-price">₹472 <sup>15</sup>/-</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (98)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/51DzcQB9SdL._AC_UL480_FMwebp_QL65_.webp" alt="Product 3"
+                            class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Puma Men's Coarse Running Shoe</h3>
+                            <div class="product-price">₹49.99</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                (156)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/61DgMPH34bL._SY695_.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Puma Men's Scorch Mark Running Shoe</h3>
+                            <div class="product-price">₹1,649</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- product card 4 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/campus.jpg" alt="Product 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus SL-405A Men's Slip-On Slippers</h3>
+                            <div class="product-price">₹639</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (124)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- product card 5 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/sandels campus.jpg" alt="Product 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus 2GC-01 Men's Slip-On Outdoor Sandals</h3>
+                            <div class="product-price">₹679</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (98)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-cards_seankers">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/spark.jpg" alt="Product 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Running Shoes</h3>
+                            <div class="product-price">₹907</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (124)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/sandels.jpg" alt="Product 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Leather Sneakers</h3>
+                            <div class="product-price">₹638</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (98)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/spark_senaker.jpg" alt="Product 3" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">SPARX Mens Sm 439 Sneaker</h3>
+                            <div class="product-price">₹679</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                (156)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/scelaper.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Sparx mens SFG 204 Greyblack Flip-Flop - 9 UK (SF0204GGYBK0009)
+                            </h3>
+                            <div class="product-price">₹280</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/image/products/mans/shoes campus.jpg" alt="Product 3" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus First Men's Lace-Up Running Shoes</h3>
+                            <div class="product-price">₹1,099</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                (156)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cards_seankers">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/seankers campus.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus OG-34 Men's Lace-Up Sneakers</h3>
+                            <div class="product-price">₹1,298</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- <div class="product-card">
+                        <img src="/image/products/mans/campus.jpg" alt="Product 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus SL-405A Men's Slip-On Slippers</h3>
+                            <div class="product-price">₹639</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (124)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div> -->
+
+                    <!-- Product Card 2 -->
+                    <!-- <div class="product-card">
+                        <img src="/image/products/mans/sandels campus.jpg" alt="Product 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus 2GC-01 Men's Slip-On Outdoor Sandals</h3>
+                            <div class="product-price">₹679</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                (98)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div> -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/seankers campus.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus OG-34 Men's Lace-Up Sneakers</h3>
+                            <div class="product-price">₹1,298</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/seankers campus.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus OG-34 Men's Lace-Up Sneakers</h3>
+                            <div class="product-price">₹1,298</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/seankers campus.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus OG-34 Men's Lace-Up Sneakers</h3>
+                            <div class="product-price">₹1,298</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- product card 5 -->
+                    <div class="product-card">
+                        <img src="/image/products/mans/seankers campus.jpg" alt="Product 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Campus OG-34 Men's Lace-Up Sneakers</h3>
+                            <div class="product-price">₹1,298</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                (87)
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column footer-logo">
+                <h3>Contact With Us</h3>
+                <div class="social-icons">
+                    <a href="#" id="facbook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" id="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile Navigation
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+        }
+
+        // Initialize first slide
+        showSlide(0);
+        // Mobile Navigation
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '0';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.right = '-300px';
+        }
+    </script>
+</body>
+
+</html>

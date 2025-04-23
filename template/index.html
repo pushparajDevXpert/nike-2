@@ -18,6 +18,7 @@
         <nav>
             <ul class="sidebar">
                 <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
                 <li class="lists" id="Lists"><a href="/template/index.html">Home</a></li>
                 <li class="lists" id="Lists"><a href="/template/about.html">About</a></li>
                 <li class="lists" id="Lists"><a href="#">Products</a></li>
@@ -32,7 +33,7 @@
             <ul class="main-nav">
                 <!-- Logo on the left -->
                 <li><a href="#" id="logo">
-                    <h1 class="image">AllBrand Soles</h1>
+                    <h1 class="image">SolePort</h1>
                 </a></li>
 
                 <!-- Centered navigation links -->
@@ -58,32 +59,32 @@
     </header>
 
     <!-- Carousel Section -->
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-slide">
-                <img src="/image/banner/kids.avif" alt="Nike Air Max" class="image1">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="/image/banner/kids.avif" alt="Nike Air Max" class="image1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/image/banner/banner3.jpg" alt="Nike Dri-FIT" class="image1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="/image/banner/banner4.avif" alt="Nike Running" class="image12" >
+                </div>
+                <div class="carousel-slide">
+                    <img src="/image/banner/fashion sales.jpg" alt="Nike Training" class="image1">
+                </div>
             </div>
-            <div class="carousel-slide">
-                <img src="/image/banner/banner3.jpg" alt="Nike Dri-FIT" class="image1">
-            </div>
-            <div class="carousel-slide">
-                <img src="/image/banner/banner4.avif" alt="Nike Running" class="image12" >
-            </div>
-            <div class="carousel-slide">
-                <img src="/image/banner/fashion sales.jpg" alt="Nike Training" class="image1">
+
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
             </div>
         </div>
-
-        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-
-        <div class="carousel-indicators">
-            <span class="indicator active" onclick="goToSlide(0)"></span>
-            <span class="indicator" onclick="goToSlide(1)"></span>
-            <span class="indicator" onclick="goToSlide(2)"></span>
-            <span class="indicator" onclick="goToSlide(3)"></span>
-        </div>
-    </div>
     
     <h1 id="shop-collection">Shop by Collection</h1>
     <div class="container-1">
@@ -110,7 +111,7 @@
     <h1 class="new-lanches">New Launches</h1>
     <div class="container-2">
         <div class="card" id="new">
-            <a href="#">
+            <a href="/template/Purewhoosh.html">
                 <img src="/image/products/flipflop1.webp" alt="Beige Shoes">
             </a>
             <div class="details-sec"><b>Purewhoosh Breeze :Beige</b>
@@ -153,7 +154,7 @@
     
     <h1 id="shop-collection">Explore Our Categories</h1>
     <div class="container-3">
-        <a href="#">
+        <a href="/template/snekers.html">
             <img src="/image/products/sneakers.webp" alt="Sports"/>
         </a>
         <a href="#">
@@ -227,7 +228,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 AllBrand Soles, Inc. All Rights Reserved</p>
+            <p>&copy; 2025 SolePort, Inc. All Rights Reserved</p>
         </div>
     </footer>
 
@@ -280,6 +281,10 @@
 
         // Initialize first slide
         showSlide(0);
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
     </script>
 </body>
 </html>
